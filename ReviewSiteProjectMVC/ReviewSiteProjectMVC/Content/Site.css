@@ -152,5 +152,22 @@ footer p {
     text-align: center;
     border: 2px solid #ffce0c;
     border-radius: 50px 20px;
-    
+    margin-top: 25px;
+}
+
+.col-md-12.lower ul {
+    list-style-type: none;
+}
+
+.col-md-3.detailLeft {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.col-md-9.detailRight {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #000;
+    text-align: left;
 }

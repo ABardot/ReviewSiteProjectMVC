@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Details";
 }
-
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <h2>Game Details</h2>
 
 <div>
@@ -43,79 +43,135 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
-            </div><!-- col-md-9 -->
+                </div><!-- end carousal-->
+            </div><!-- end col-md-12 topCarousel -->
             <div class="col-md-12 lower">
-            
-            <dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.Category.Name)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Category.Name)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Title)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Title)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Publisher)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Publisher)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.PublishedDate)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.PublishedDate)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.GameReview)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.GameReview)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.GameScore)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.GameScore)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Price)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Price)
-                </dd>
-
-            </dl>
-
-
-
-                        <p>
-                            @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
-                            @Html.ActionLink("Back to List", "Index")
-                        </p>
+                <div class="row">
+                    <div class="col-md-3 detailLeft">
+                        <ul>
+                            <li>
+                                @Html.DisplayNameFor(model => model.Category.Name):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.Title):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.Publisher):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.PublishedDate):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.GameReview):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.GameScore):
+                            </li>
+                            <li>
+                                @Html.DisplayNameFor(model => model.Price):
+                            </li>
+                        </ul>
                     </div>
-                </div><!-- end of col-md-12 -->
-            </div><!-- end row -->
-        </div>
+                    <div class="col-md-9 detailRight">
+                        <ul>
+                            <li>
+                                @Html.DisplayFor(model => model.Category.Name)
+                            </li>
+                            <li>
+                                @Html.DisplayFor(model => model.Title)
+                            </li>
+                            <li>
+                                @Html.DisplayFor(model => model.Publisher)
+                            </li>
+                            <li>
+                                @Html.DisplayFor(model => model.PublishedDate)
+                            </li>
+                            <li>
+                                @Html.DisplayFor(model => model.GameReview)
+                            </li>
+                            <li>
+                                @Html.DisplayFor(model => model.GameScore)/10
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-dollar-sign"></i> @Html.DisplayFor(model => model.Price).00
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="~/Reviews/Edit/1" type="btn" class="btn swagButton">
+                            Edit
+                        </a>
+                        <a href="~/Reviews" type="btn" class="btn swagButton">
+                            Back to List
+                        </a>
+                    </div>
+                    </div><!-- end row lower-->
+                </div><!-- end col-md-12 lower-->
+        </div><!-- end 12 col header-->
+    </div><!-- end row -->
+</div><!-- end body -->
 
 
-          
+
+@*<dt>
+    @Html.DisplayNameFor(model => model.Category.Name)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Category.Name)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.Title)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Title)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.Publisher)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Publisher)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.PublishedDate)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.PublishedDate)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.GameReview)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.GameReview)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.GameScore)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.GameScore)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.Price)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Price)
+</dd>
+
+                        </dl>*@
