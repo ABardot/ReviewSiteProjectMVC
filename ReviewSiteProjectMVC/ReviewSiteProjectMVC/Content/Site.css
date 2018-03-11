@@ -51,6 +51,48 @@ footer p {
     height: 450px;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 8px 10px;
     margin-top: 30px;
 }
+
+.col-md-6.review-right {
+    background-color: gray;
+    color: #ffce0c;
+    text-align: center;
+    border: 2px solid #ffce0c;
+    border-radius: 50px 20px;
+    height: 165px;
+}
+
+.col-md-6.category-left {
+    background-color: gray;
+    color: #ffce0c;
+    text-align: center;
+    grid-area: auto;
+    border: 2px solid #ffce0c;
+    border-radius: 50px 20px;
+    height: 165px;
+}
+
+/*Button landing */
+
+.swagButton a {
+    text-decoration: none !important;
+}
+
+.swagButton {
+    font-family: Pristina;
+    font-weight: 100;
+    font-size: 30px;
+    color: #171a21;
+    border: solid 2px #ffce0c;
+    border-radius: 50px;
+    padding: 5px 5px;
+    background-color: #ffce0c;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+    .swagButton:hover {
+        background-color: #171a21;
+        color: #ffce0c;
+    }
