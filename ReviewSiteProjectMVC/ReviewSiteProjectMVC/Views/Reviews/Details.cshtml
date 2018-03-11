@@ -4,11 +4,30 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Game Details</h2>
 
 <div>
     <h4>Review</h4>
-    <hr />
+    <div class="row">
+        <div class="col-md-12 review-header">
+
+           
+           
+
+
+
+
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div><!-- end of col-md-12 -->
+    </div>
+</div>
+
+
+    <!-- dont erase -->
+    @*<hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Category.Name)
@@ -67,8 +86,4 @@
         </dd>
 
     </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+</div>*@

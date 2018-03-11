@@ -76,7 +76,6 @@ footer p {
 }
 
 /*Button Swag */
-
 .swagButton a {
     text-decoration: none !important;
 }
@@ -132,7 +131,8 @@ footer p {
 }
 
 /* Star Rating */
-
 .fas.fa-star.checked {
     color: orange;
 }
+
+/* Details Start */
