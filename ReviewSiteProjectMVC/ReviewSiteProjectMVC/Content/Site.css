@@ -114,6 +114,12 @@ footer p {
     list-style-type: none;
 }
 
-.col-md-8.displayRight {
-    background-color: red;
+.col-md-10.displayRight {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.col-md-2.displayLeft {
+    padding-top: 15px;
+    text-align: left;
 }

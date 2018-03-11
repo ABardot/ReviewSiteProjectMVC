@@ -4,16 +4,17 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Reviews</h2>
 
 <p>
-    @*@Html.ActionLink("Create New", "Create")*@
     <a href="~/Reviews/Create" type="btn" class="btn swagButton">Create</a>
 </p>
 
 <div class="row">
+    @foreach (var item in Model)
+    {
     <div class="col-md-12 review-header">
-        <div class="col-md-4 displayLeft">
+        <div class="col-md-2 displayLeft">
             <ul>
                 <li>
                     @Html.DisplayNameFor(model => model.Category.Name)
@@ -38,9 +39,8 @@
                 </li>
             </ul>
         </div>
-        @foreach (var item in Model) { 
+        <div class="col-md-10 displayRight">
 
-        <div class="col-md-8 displayRight">
             <ul>
                 <li>
                     @Html.DisplayFor(modelItem => item.Category.Name)
@@ -64,9 +64,16 @@
                     @Html.DisplayFor(modelItem => item.Price)
                 </li>
             </ul>
+
         </div>
-}
+        <div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.GameID })
+            @Html.ActionLink("Details", "Details", new { id = item.GameID })
+            @Html.ActionLink("Delete", "Delete", new { id = item.GameID })
+        </div>
     </div><!-- col-md-12 end-->
+       
+    }
 </div><!-- row end-->
 
 
@@ -76,37 +83,5 @@
 
 
 
-
-
-@*@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Publisher)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishedDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GameReview)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GameScore)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GameID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GameID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GameID })
-        </td>
-    </tr>*@
-}
 
 
