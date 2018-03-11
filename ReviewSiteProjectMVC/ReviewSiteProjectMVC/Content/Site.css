@@ -171,3 +171,7 @@ footer p {
     color: #000;
     text-align: left;
 }
+
+.buttonDescription {
+    padding-bottom: 10px;
+}

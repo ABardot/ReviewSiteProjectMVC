@@ -90,19 +90,19 @@
                                 @Html.DisplayFor(model => model.GameReview)
                             </li>
                             <li>
-                                @Html.DisplayFor(model => model.GameScore)/10
+                                @Html.DisplayFor(model => model.GameScore)/5
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
                             </li>
                             <li>
                                 <i class="fas fa-dollar-sign"></i> @Html.DisplayFor(model => model.Price).00
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="buttonDescription">
                         <a href="~/Reviews/Edit/1" type="btn" class="btn swagButton">
                             Edit
                         </a>
