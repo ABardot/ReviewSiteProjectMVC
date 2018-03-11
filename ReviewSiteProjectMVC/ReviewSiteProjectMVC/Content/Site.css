@@ -179,6 +179,7 @@ footer p {
 
 .swagger a {
     text-decoration: none !important;
+    color: #171a21;
 }
 
 .swagger {
@@ -194,7 +195,15 @@ footer p {
     transition-duration: 200ms;
 }
 
-    .swagger:hover {
-        background-color: #171a21;
-        color: #ffce0c;
-    }
+.swagger:hover {
+    background-color: #171a21;
+    color: #ffce0c;
+}
+
+.swagger:hover a {
+    background-color: #171a21;
+    color: #ffce0c;
+    border-radius: 50px;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
