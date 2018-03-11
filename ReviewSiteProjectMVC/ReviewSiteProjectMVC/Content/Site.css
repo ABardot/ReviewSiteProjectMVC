@@ -1,12 +1,20 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('img/master-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #171a21 !important;
+    border: 2px solid #ffce0c;
+    border-radius: 15px;
+    width: 1200px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +30,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+footer p {
+    text-align: center;
+    color: #ffce0c;
+}
+
+/*.jumbotron {
+
+}*/
