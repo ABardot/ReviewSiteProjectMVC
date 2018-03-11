@@ -50,45 +50,12 @@
                  </ul>
             </div>
             <div>
-                <a href="~/Reviews/Edit/1" type="btn" class="btn swagButton">
-                    Edit
-                </a>
-                <a href="~/Reviews/Details/1" type="btn" class="btn swagButton">
-                    Details
-                </a>
-                <a href="~/Reviews/Delete/1" type="btn" class="btn swagButton">
-                   Delete
-                </a>
+                <button class="swagger">@Html.ActionLink("Edit", "Edit", new { id = item.GameID })</button>          
+                <button class="swagger">@Html.ActionLink("Details", "Details", new { id = item.GameID })</button>
+                <button class="swagger">@Html.ActionLink("Delete", "Delete", new { id = item.GameID })</button> 
             </div>
         </div><!-- col-md-12 end-->
       }
 </div><!-- row end-->
-
-
-@*<ul>
-        <li>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.Title)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.Publisher)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.PublishedDate)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.GameReview)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.GameScore)
-        </li>
-        <li>
-            @Html.DisplayNameFor(model => model.Price)
-        </li>
-    </ul>*@
-
-
 
 

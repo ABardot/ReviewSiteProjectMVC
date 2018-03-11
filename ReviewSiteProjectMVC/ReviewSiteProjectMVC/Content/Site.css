@@ -107,6 +107,7 @@ footer p {
     border: 2px solid #ffce0c;
     border-radius: 50px 20px;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 .col-md-12.review-header ul {
@@ -175,3 +176,25 @@ footer p {
 .buttonDescription {
     padding-bottom: 10px;
 }
+
+.swagger a {
+    text-decoration: none !important;
+}
+
+.swagger {
+    font-family: Pristina;
+    font-weight: 100;
+    font-size: 25px;
+    color: #171a21 !important;
+    border: solid 2px #ffce0c;
+    border-radius: 50px;
+    padding: 1px 5px;
+    background-color: #ffce0c;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+    .swagger:hover {
+        background-color: #171a21;
+        color: #ffce0c;
+    }
