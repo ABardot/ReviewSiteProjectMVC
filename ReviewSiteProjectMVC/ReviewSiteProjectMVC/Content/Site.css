@@ -136,3 +136,21 @@ footer p {
 }
 
 /* Details Start */
+#myCarousel {
+    background-color: #171a21;
+    border: 2px solid #ffce0c;
+}
+
+#myCarousel img {
+    width: 100%;
+    height: 450px;
+}
+
+.col-md-12.lower {
+    background-color: gray;
+    color: #ffce0c;
+    text-align: center;
+    border: 2px solid #ffce0c;
+    border-radius: 50px 20px;
+    
+}
