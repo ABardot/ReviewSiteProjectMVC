@@ -94,21 +94,6 @@ footer p {
     transition-duration: 200ms;
 }
 
-
-/*.reviewFooter {
-    font-family: Pristina;
-    font-weight: 100;
-    font-size: 25px;
-    color: #171a21;
-    border: solid 2px #ffce0c;
-    border-radius: 50px;
-    padding: 1px 5px;
-    background-color: #ffce0c;
-    -webkit-transition-duration: 200ms;
-    transition-duration: 200ms;
-}*/
-
-
 .swagButton:hover {
     background-color: #171a21;
     color: #ffce0c;
@@ -122,19 +107,26 @@ footer p {
     grid-area: auto;
     border: 2px solid #ffce0c;
     border-radius: 50px 20px;
-    height: 250px;
+    height: 300px;
 }
 
 .col-md-12.review-header ul {
     list-style-type: none;
 }
 
-.col-md-10.displayRight {
-    padding-top: 15px;
+.col-md-8.displayRight {
+    padding-top: 30px;
     text-align: left;
+    font-size: 15px;
+    color: #000;
 }
 
-.col-md-2.displayLeft {
+.col-md-4.displayLeft {
+    padding-top: 20px;
+    
+}
+
+.col-md-4.displayLeft img{
     padding-top: 15px;
-    text-align: left;
+    width: 350px;
 }

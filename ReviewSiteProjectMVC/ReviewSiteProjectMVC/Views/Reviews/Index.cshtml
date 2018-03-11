@@ -4,6 +4,8 @@
     ViewBag.Title = "Index";
 }
 
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
 <h2>Reviews</h2>
 
 <p>
@@ -14,10 +16,10 @@
     @foreach (var item in Model)
     {
         <div class="col-md-12 review-header">
-            <div class="col-md-2 displayLeft">
-
+            <div class="col-md-4 displayLeft">
+                <img src="~/Content/img/arma.png" />
             </div>
-            <div class="col-md-10 displayRight">
+            <div class="col-md-8 displayRight">
                 <ul>
                     <li>
                         @Html.DisplayFor(modelItem => item.Category.Name)
@@ -38,9 +40,9 @@
                         @Html.DisplayFor(modelItem => item.GameScore)
                     </li>
                     <li>
-                        @Html.DisplayFor(modelItem => item.Price)
+                        <i class="fas fa-dollar-sign"></i>@Html.DisplayFor(modelItem => item.Price)
                     </li>
-                </ul>
+                 </ul>
             </div>
             <div>
                 <a href="~/Reviews/Edit/1" type="btn" class="btn swagButton">
