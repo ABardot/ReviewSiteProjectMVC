@@ -4,6 +4,8 @@
     background-image: url('img/master-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+    background-color: #171a21 !important;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -73,7 +75,7 @@ footer p {
     height: 165px;
 }
 
-/*Button landing */
+/*Button Swag */
 
 .swagButton a {
     text-decoration: none !important;
@@ -82,17 +84,36 @@ footer p {
 .swagButton {
     font-family: Pristina;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
     color: #171a21;
     border: solid 2px #ffce0c;
     border-radius: 50px;
-    padding: 5px 5px;
+    padding: 1px 5px;
     background-color: #ffce0c;
     -webkit-transition-duration: 200ms;
     transition-duration: 200ms;
 }
 
-    .swagButton:hover {
+.swagButton:hover {
         background-color: #171a21;
         color: #ffce0c;
-    }
+}
+
+/* Banner for the Review Index */
+.col-md-12.review-header {
+    background-color: gray;
+    color: #ffce0c;
+    text-align: center;
+    grid-area: auto;
+    border: 2px solid #ffce0c;
+    border-radius: 50px 20px;
+    height: 200px;
+}
+
+.col-md-12.review-header ul {
+    list-style-type: none;
+}
+
+.col-md-8.displayRight {
+    background-color: red;
+}

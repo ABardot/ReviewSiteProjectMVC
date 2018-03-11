@@ -7,35 +7,78 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a href="~/Reviews/Create" type="btn" class="btn swagButton">Create</a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Publisher)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishedDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GameReview)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GameScore)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
+<div class="row">
+    <div class="col-md-12 review-header">
+        <div class="col-md-4 displayLeft">
+            <ul>
+                <li>
+                    @Html.DisplayNameFor(model => model.Category.Name)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.Title)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.Publisher)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.PublishedDate)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.GameReview)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.GameScore)
+                </li>
+                <li>
+                    @Html.DisplayNameFor(model => model.Price)
+                </li>
+            </ul>
+        </div>
+        @foreach (var item in Model) { 
+
+        <div class="col-md-8 displayRight">
+            <ul>
+                <li>
+                    @Html.DisplayFor(modelItem => item.Category.Name)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.Publisher)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.PublishedDate)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.GameReview)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.GameScore)
+                </li>
+                <li>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </li>
+            </ul>
+        </div>
+}
+    </div><!-- col-md-12 end-->
+</div><!-- row end-->
+
+
+
+
+
+
+
+
+
+
+@*@foreach (var item in Model) {
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Category.Name)
@@ -63,7 +106,7 @@
             @Html.ActionLink("Details", "Details", new { id=item.GameID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.GameID })
         </td>
-    </tr>
+    </tr>*@
 }
 
-</table>
+
