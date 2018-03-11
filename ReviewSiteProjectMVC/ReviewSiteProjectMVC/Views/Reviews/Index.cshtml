@@ -37,7 +37,12 @@
                         @Html.DisplayFor(modelItem => item.GameReview)
                     </li>
                     <li>
-                        @Html.DisplayFor(modelItem => item.GameScore)
+                        @Html.DisplayFor(modelItem => item.GameScore)/10
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
                     </li>
                     <li>
                         <i class="fas fa-dollar-sign"></i>@Html.DisplayFor(modelItem => item.Price)
@@ -58,6 +63,8 @@
         </div><!-- col-md-12 end-->
       }
 </div><!-- row end-->
+
+
 @*<ul>
         <li>
             @Html.DisplayNameFor(model => model.Category.Name)
