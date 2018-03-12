@@ -33,6 +33,16 @@ textarea {
     max-width: 280px;
 }
 
+h1 {
+    font-family: Bahnschrift;
+}
+
+
+h2 {
+    font-family: 'Lucida Sans';
+}
+
+
 footer p {
     text-align: center;
     color: #ffce0c;
@@ -46,6 +56,34 @@ footer p {
     border-radius: 25px;
 }
 
+.navbar-header i {
+    padding-top: 11px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: 'Agency FB';
+    color: #ffce0c !important;
+    font-size: large;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    font-family: 'Agency FB';
+    color: darkorange !important;
+    font-size: large;
+}
+
+.navbar-brand {
+    font-family: 'Agency FB';
+    color: #ffce0c !important;
+    font-size: 25px;
+}
+
+.navbar-brand:hover {
+    font-family: 'Agency FB';
+    color: darkorange !important;
+    font-size: 25px;
+}
+
 .jumbotron {
     background-image: url('img/gaben-jumbo.png');
     background-repeat: no-repeat;
@@ -54,6 +92,7 @@ footer p {
     border: 1px solid;
     padding: 10px;
     margin-top: 30px;
+    color: #171a21;
 }
 
 .col-md-6.review-right {
@@ -81,9 +120,9 @@ footer p {
 }
 
 .swagButton {
-    font-family: Pristina;
+    font-family:'Lucida Console';
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
     color: #171a21;
     border: solid 2px #ffce0c;
     border-radius: 50px;
@@ -115,6 +154,7 @@ footer p {
 }
 
 .col-md-8.displayRight {
+    font-family: 'Lucida Bright';
     padding-top: 30px;
     text-align: left;
     font-size: 15px;
@@ -161,11 +201,13 @@ footer p {
 }
 
 .col-md-3.detailLeft {
+    font-family: 'Lucida Console';
     padding-top: 20px;
     text-align: right;
 }
 
 .col-md-9.detailRight {
+    font-family: 'Lucida Bright';
     padding-top: 20px;
     text-align: left;
     font-size: 15px;
@@ -183,9 +225,9 @@ footer p {
 }
 
 .swagger {
-    font-family: Pristina;
+    font-family: 'Lucida Console';
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
     color: #171a21 !important;
     border: solid 2px #ffce0c;
     border-radius: 50px;
